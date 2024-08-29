@@ -1,0 +1,77 @@
+OBJECTS :
+    - key:value pair 
+    - key is a string always, it is basically the name of the property and
+    - value can be anything 
+
+- empty object intialisation:
+let user = new Object();
+let user = {}; // this ic caleed object literal 
+
+- key and value both are called properties of objects basically
+
+- operations on objects: read, add, delete 
+let user = {
+    name = "amlan",
+    age = 24
+}
+
+read:
+alert(user.name);
+alert(user.age);
+
+add:
+user.birthday = "10 September";
+user.isAdmin = true; //boolean value
+
+delete: 
+delete user.age;
+
+-multiword property name 
+let user ={
+    name: "amlan",
+    age : 24,
+    "likes this": "music" 
+}
+
+-but we can't use . to read multiline properties 
+user.likes this = "tech" will give syntax error 
+
+- the last property can end with a comma 
+let user ={
+    name: "amlan",
+    age : 24,
+    "likes this": "music", 
+}
+
+-alternative : square bracket notation
+
+let user = {};
+
+// set
+user["likes birds"] = true;
+
+// get
+alert(user["likes birds"]); // true
+
+// delete
+delete user["likes birds"];
+
+- [] notation for properties
+let key = "likes birds";
+
+user[key] = true;
+
+//here, we can't use . to access the key , it'll give error saying undefined
+
+- What are computated properties? 
+we can use [] notation in object literals, which is called a s computated properties
+
+let fruit = prompt("Which is the fruit", "mango");
+let bag = {
+    [fruit] : 5;
+}
+
+alert(bag.apple);  // 5 when fruit = apple in the prompt
+
+
+

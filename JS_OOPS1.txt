@@ -1,0 +1,20 @@
+This in JS:
+    - it is a keyword 
+
+why is This used in JS?
+    - methods use it to access the object/objects
+    - used as a reference to the object where "this" is used.
+
+can it be used in arrow functions ? 
+    - NO, it cant be used in arrow functions.
+    - WHY ? : because this will refer to the window object
+      (which is the global object) in arrow functions in case of a browser or 
+
+
+what are the major rules for THIS ?
+    - for global execution context, this will be the window object.
+    - for execution context created with method call ( calling with the object),
+    this will be that object.
+    - for execution context created with a function call ( calling without object),
+    this will be that window object.
+
